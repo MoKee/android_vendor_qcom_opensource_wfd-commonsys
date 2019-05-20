@@ -14,6 +14,7 @@ LOCAL_STATIC_LIBRARIES := libFraunhoferAAC
 
 LOCAL_32_BIT_ONLY := true
 LOCAL_MODULE := libwfdaac
+LOCAL_CFLAGS += -O0
 
 LOCAL_SANITIZE := integer_overflow
 include $(BUILD_SHARED_LIBRARY)
@@ -37,6 +38,7 @@ LOCAL_VENDOR_MODULE := true
 
 LOCAL_32_BIT_ONLY := true
 LOCAL_MODULE := libwfdaac_vendor
+LOCAL_CFLAGS += -O0
 
 LOCAL_SANITIZE := integer_overflow
 include $(BUILD_SHARED_LIBRARY)
