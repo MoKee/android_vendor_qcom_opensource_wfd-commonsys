@@ -8,5 +8,7 @@ endif
 endif
 
 ifneq ($(call is-board-platform-in-list,$(WFD_DISABLE_PLATFORM_LIST)),true)
+ifneq ($(TARGET_HAS_LOW_RAM), true)
 include $(call all-makefiles-under, $(LOCAL_PATH))
+endif
 endif
