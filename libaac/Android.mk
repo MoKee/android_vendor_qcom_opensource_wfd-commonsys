@@ -11,6 +11,8 @@ LOCAL_C_INCLUDES += $(TOP)/external/aac/libSYS/include
 
 LOCAL_SHARED_LIBRARIES := liblog
 LOCAL_SHARED_LIBRARIES += libavservices_minijail
+LOCAL_SHARED_LIBRARIES += vendor.display.config@2.0
+LOCAL_SHARED_LIBRARIES += libdisplayconfig.qti
 LOCAL_STATIC_LIBRARIES := libFraunhoferAAC
 
 LOCAL_32_BIT_ONLY := true
@@ -34,6 +36,8 @@ LOCAL_HEADER_LIBRARIES += libutils_headers
 
 LOCAL_SHARED_LIBRARIES := liblog
 LOCAL_SHARED_LIBRARIES += libavservices_minijail
+LOCAL_SHARED_LIBRARIES += vendor.display.config@2.0
+LOCAL_SHARED_LIBRARIES += libdisplayconfig.qti
 LOCAL_STATIC_LIBRARIES := libFraunhoferAAC
 
 LOCAL_VENDOR_MODULE := true
